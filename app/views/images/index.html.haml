@@ -1,0 +1,14 @@
+.wrapper
+  .images-field
+    .title
+      クリックするとトリミング画面
+    =image_tag "uchya.jpg",{data:{"image_filename": "uchya.jpg"}}
+  .result-image-field
+    .title
+      トリミング結果
+  = file_field :image,:path,id:"input-file"
+  .cropped-images
+    %span.title
+      履歴
+      %span.delete-btn
+        画像とデータベースのお掃除
